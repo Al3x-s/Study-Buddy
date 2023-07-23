@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <head>
-  <title>OpenAI Quickstart</title>
-  <link
-    rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
-  />
+  <title>thishitsux</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
   <h3>Topic To Study</h3>
   <form action="/" method="post">
     <input type="text" name="topic" placeholder="Enter a topic" required />
     <input type="submit" value="Generate" />
   </form>
   {% if result %}
-  <div class="result">{{ result }}</div>
+
+  {% for i in result %}
+  <div class="res">{{ i }}</div>
+  {% endfor %}
+
   {% endif %}
+
+
+
+
+  {% if tokens_used %}
+  <div class="tokens"> tokens used {{ tokens_used }}</div>
+  {% endif %}
+
 </body>
