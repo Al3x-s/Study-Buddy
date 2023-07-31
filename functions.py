@@ -16,4 +16,3 @@ input_string = """1. American Museum of Natural History Dinosaur Database: https
 2. Smithsonian Institution’s National Museum of Natural History’s Dinosaurs: https://naturalhistory.si.edu/dinosaurs
 3. National Geographic’s Dinosaurs: https://www.nationalgeographic.com/science/prehistoric-world/dinosaurs/"""
 result = separate_data_and_info(input_string)
-print(result)

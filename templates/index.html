@@ -15,14 +15,17 @@
   {% for i in result %}
   <div class="res">{{ i }}</div>
   {% endfor %}
-
+<!--
+  <form action="/" method="post">
+    <input type="text" name="curious" placeholder="anythig else">
+    <input type="submit" value="answer">
+   </form>
+-->
   {% endif %}
 
 
-
-
-  {% if tokens_used %}
-  <div class="tokens"> tokens used {{ tokens_used }}</div>
+ {% if tokens_used %}
+ <div class="tokens"> tokens used {{ tokens_used }}>= 50 tops</div>
   {% endif %}
 
 </body>

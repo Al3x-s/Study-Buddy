@@ -48,6 +48,6 @@ resouces:""".format(
     )
 
 #Redirect user to another page and present pt 2 of the page cuz this page is trash
-
+# stop loop here this kills api calls
 def generate_qa(question):
     return""" answer the following question to the best of your ability about the above topic""".format(question)
